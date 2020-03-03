@@ -1,0 +1,30 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": ".",
+        "incremental": false,
+        "noImplicitAny": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "jsx": "react",
+        "module": "umd",
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "target": "es5",
+        "lib": ["es2017", "dom"],
+        "allowJs": true,
+        "outDir": "./lib"
+    },
+    "exclude": [
+        "**/lib",
+        "node_modules",
+        "**/node_modules",
+        "**/*.spec.ts",
+        "**/__tests__",
+        "**/*.test.ts",
+        "register.js",
+        "src/constants.ts"
+    ]    
+}
