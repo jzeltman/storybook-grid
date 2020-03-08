@@ -1,40 +1,40 @@
 {
-  "name": "storybook-grid",
-  "version": "0.0.1",
-  "description": "Storybook Decorator for your favorite grid",
-  "main": "index.js",
-  "files": [
-    "lib/decorator/index.js",
-    "register.js"
-  ],
-  "scripts": {
-    "build": "npx tsc --listEmittedFiles true --allowjs true",
-    "watch": "npx tsc --watch --listEmittedFiles true --allowjs true"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jzeltman/storybook-grid.git"
-  },
-  "keywords": [
-    "storybook",
-    "grid",
-    "addons"
-  ],
-  "author": "Joshua Zeltman",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jzeltman/storybook-grid/issues"
-  },
-  "homepage": "https://github.com/jzeltman/storybook-grid#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.6",
-    "@babel/preset-typescript": "^7.8.3",
-    "typescript": "^3.8.3"
-  },
-  "dependencies": {
-    "@storybook/addons": "^5.3.14",
-    "@storybook/core-events": "^5.3.14",
-    "react": "^16.13.0"
-  }
+    "name": "storybook-grid",
+    "version": "0.0.1",
+    "description": "Storybook Decorator for your favorite grid",
+    "main": "lib/decorators/react.js",
+    "files": [
+        "lib/decorators/react.js",
+        "register.js"
+    ],
+    "scripts": {
+        "build": "npx tsc --listEmittedFiles true --allowjs true",
+        "watch": "npx tsc --watch --listEmittedFiles true --allowjs true"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jzeltman/storybook-grid.git"
+    },
+    "keywords": [
+        "storybook",
+        "grid",
+        "addons"
+    ],
+    "author": "Joshua Zeltman",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jzeltman/storybook-grid/issues"
+    },
+    "homepage": "https://github.com/jzeltman/storybook-grid#readme",
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.8.6",
+        "@babel/preset-typescript": "^7.8.3",
+        "typescript": "^3.8.3"
+    },
+    "dependencies": {
+        "@storybook/addons": "^5.3.14",
+        "@storybook/core-events": "^5.3.14",
+        "react": "^16.13.0"
+    }
 }
