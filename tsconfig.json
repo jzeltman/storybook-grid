@@ -1,30 +1,37 @@
 {
     "compileOnSave": false,
     "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
         "baseUrl": ".",
-        "incremental": false,
-        "noImplicitAny": false,
-        "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "incremental": false,
         "jsx": "react",
-        "module": "umd",
+        "lib": [
+            "es5",
+            "es6",
+            "es7",
+            "es2017",
+            "dom"
+        ],
+        "listEmittedFiles": true,
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "outDir": "./lib",
         "skipDefaultLibCheck": true,
         "skipLibCheck": true,
-        "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
         "target": "es5",
-        "lib": ["es2017", "dom"],
-        "allowJs": true,
-        "outDir": "./lib"
     },
     "exclude": [
-        "**/lib",
+        "lib",
         "node_modules",
-        "**/node_modules",
-        "**/*.spec.ts",
-        "**/__tests__",
-        "**/*.test.ts",
         "register.js",
         "src/constants.ts"
-    ]    
+    ],
+    "files": [
+        "./src/decorators/react.tsx",
+        "./src/register/index.tsx"
+    ]
 }
